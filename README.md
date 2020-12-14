@@ -16,7 +16,7 @@ The goals / steps of this project are the following:
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consisted of 6 steps. First, I converted the image to grayscale, then applied gaussian blur to it, and then detected edges using canny. A region of interest was then defined using the shape of the image (video frame). After this, the hough transform step was done, and this step includes line drawing. In the end, the original image and the hough lines were overlayed to product the final image.
+My pipeline consisted of 6 steps, implemented in `./P1.ipynb`. First, I converted the image to grayscale, then applied gaussian blur to it, and then detected edges using canny. A region of interest was then defined using the shape of the image (video frame). After this, the hough transform step was done, and this step includes line drawing. In the end, the original image and the hough lines were overlayed to product the final image.
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by:
 1. Splitting the line segments into left and right lanes. Line segments with slopes that are too horizontal or too vertical were ignored.
